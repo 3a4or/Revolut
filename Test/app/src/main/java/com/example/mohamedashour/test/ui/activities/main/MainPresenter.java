@@ -33,10 +33,10 @@ public class MainPresenter implements MainContract.MainPresenter{
 
     @Override
     public void getCurrencies(String base, double amount) {
-        compositeDisposable.add(Observable.interval(0, 3, TimeUnit.SECONDS)
+        compositeDisposable.add(Observable.interval(0, 1, TimeUnit.SECONDS)
                 .flatMap((Function<Long, ObservableSource<?>>) aLong -> RetrofitSingleton.webService()
                         .getCurrencies("latest?base=" + base + "&amount=" + amount)
-                        .takeUntil(Observable.timer(3, TimeUnit.SECONDS))
+                        .takeUntil(Observable.timer(1, TimeUnit.SECONDS))
                 )
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
