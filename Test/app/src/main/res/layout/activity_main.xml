@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activities.main.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_main_currencies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/tv_main_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_no_data"
+        android:textColor="@color/colorBlack"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:textSize="20sp"/>
+
+</FrameLayout>

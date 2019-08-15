@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="msg_no_data">Sorry, no data available now !</string>
+    <string name="label_new_notification">New Notification</string>
+    <string name="msg_active_since">User Active Since </string>
+    <string name="label_seconds">Seconds </string>
+</resources>
